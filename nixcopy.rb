@@ -11,7 +11,7 @@ class Nixcopy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/preedep/go-nixcopy/releases/download/v1.2.0/nixcopy_1.2.0_darwin_amd64.tar.gz"
-      sha256 "18410b4279382ce3ebef75dd70a4367411f75d724edbd6645c134319a37159c5"
+      sha256 "7b7c2a0317c6a9042a8acf404c467582278119b15d0493d49903bbe22212cabd"
 
       define_method(:install) do
         bin.install "nixcopy"
@@ -19,7 +19,7 @@ class Nixcopy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/preedep/go-nixcopy/releases/download/v1.2.0/nixcopy_1.2.0_darwin_arm64.tar.gz"
-      sha256 "406d74650f9edf64403d6c39e20d460fbb377ecc19ed2c0c86307d4e530861ef"
+      sha256 "4bcc5ca90851cc280c277b061ad3485fd06be0c429095cc9d26fdc134eee9eea"
 
       define_method(:install) do
         bin.install "nixcopy"
@@ -30,14 +30,14 @@ class Nixcopy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/preedep/go-nixcopy/releases/download/v1.2.0/nixcopy_1.2.0_linux_amd64.tar.gz"
-      sha256 "837f93aa8fc96929c7063e2a5ebb58fd85dbdce15867c36f2b1c18ec663fbf3a"
+      sha256 "1eea79207fedec09f5f9cb88d7a744ecfa418dc5e8ebc8cf0da6c88440acccdb"
       define_method(:install) do
         bin.install "nixcopy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/preedep/go-nixcopy/releases/download/v1.2.0/nixcopy_1.2.0_linux_arm64.tar.gz"
-      sha256 "e9597ec41c752bd032b91c9c86f93ec3ea35320a7c8ff8a86bcad8fe74ff5e09"
+      sha256 "d44907332d5059724817c9db202a91a6748d3e8b1ef90130002f05f3bddcfc0a"
       define_method(:install) do
         bin.install "nixcopy"
       end
