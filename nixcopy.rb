@@ -5,21 +5,21 @@
 class Nixcopy < Formula
   desc "Fast universal file-transfer CLI — SFTP, FTPS, Azure Blob, AWS S3, local disk"
   homepage "https://github.com/preedep/go-nixcopy"
-  version "1.3.5"
+  version "1.3.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.5/nixcopy_1.3.5_darwin_amd64.tar.gz"
-      sha256 "b58a3dd30bcaf18c2933e38ad52e1231e8337bdf855d7940494b83cd642a8e2c"
+      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.6/nixcopy_1.3.6_darwin_amd64.tar.gz"
+      sha256 "f0c2327a412d1f07d395e09ec4f4519045da866cc2b08bf5ffbcada86271ca52"
 
       define_method(:install) do
         bin.install "nixcopy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.5/nixcopy_1.3.5_darwin_arm64.tar.gz"
-      sha256 "925ff25a6fdb723498fa57e906f90f233ef37e14ce5d2262388cb1c82ed990c9"
+      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.6/nixcopy_1.3.6_darwin_arm64.tar.gz"
+      sha256 "4deba2d7479bf3c06fd6793a7dd0523b07457808fa0f1c2b270dd869a3cbbae6"
 
       define_method(:install) do
         bin.install "nixcopy"
@@ -29,15 +29,15 @@ class Nixcopy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.5/nixcopy_1.3.5_linux_amd64.tar.gz"
-      sha256 "7f4686e97b58d6ec06bb3b5f9116934a0af0344cbf40a0ee8fbb2f487dff9284"
+      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.6/nixcopy_1.3.6_linux_amd64.tar.gz"
+      sha256 "761601d7b1c98feee155fcca200b469daf95b0505a5fbbbc371081d04c7ddde4"
       define_method(:install) do
         bin.install "nixcopy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.5/nixcopy_1.3.5_linux_arm64.tar.gz"
-      sha256 "cc0bafaf4bc537b252392e292e13ccd29f10c2772aa34e38b503e99fc4ab884a"
+      url "https://github.com/preedep/go-nixcopy/releases/download/v1.3.6/nixcopy_1.3.6_linux_arm64.tar.gz"
+      sha256 "f096a848ae2578d15f2911e766aba2836cd7684a907626cebdb9c26496219530"
       define_method(:install) do
         bin.install "nixcopy"
       end
